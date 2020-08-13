@@ -2,16 +2,11 @@ apiVersion: v1
 kind: Pod
 metadata: 
   name: nginx-resolver
+  labels:
+    run: nginx-resolver
 spec:
   containers:
-<<<<<<< HEAD
   - name: nginx-resolver
     image: nginx
     ports:
     - containerPort: 80
-=======
-    - name: nginx-resolver-yuval
-      image: nginx
-      ports:
-      - containerPort: 80
->>>>>>> fixed ex13 yaml
