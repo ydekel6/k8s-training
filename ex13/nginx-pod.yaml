@@ -1,0 +1,10 @@
+apiVersion: v1
+Kind: Pod
+metadata: 
+	Name: nginx-resolver
+spec:
+	Containers:
+      - Name: nginx-resolver
+        Image: nginx
+        Ports:
+        - containerPort: 80
