@@ -3,11 +3,15 @@ kind: Service
 metadata:
   labels:
     run: nginx-resolver
-  name: nginx-resolver
+  name: nginx-resolver-service
 spec:
   ports:
   - port: 80
     protocol: TCP
     targetPort: 80
   selector:
-  type: LoadBalancer
+    run: nginx-resolver
+  type: ClusterIP
+status:
+  loadBalancer: {}
+
