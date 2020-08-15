@@ -10,6 +10,4 @@ spec:
     protocol: TCP
     targetPort: 80
   selector:
-  type: ClusterIP
-status:
-  loadBalancer: {}
+  type: loadBalancer
