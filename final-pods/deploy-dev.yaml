@@ -13,7 +13,7 @@ spec:
     metadata:
       labels:
         app: nginx
-	env: dev
+        env: dev
     spec:
       containers:
       - name: nginx-dev
